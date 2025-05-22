@@ -35,24 +35,24 @@ const Portfolio = () => {
         </div>
         <Carousel prevArrow="" nextArrow="" className="rounded-xl ">
           {workflows.map(({title, short, description, image}, index) => (
-            <div className='h-full flex flex-col md:flex-row' key={index}>
+            <div className='h-full flex flex-col lg:flex-row ' key={index}>
               <div className="basis-1/3 bg-primary-light p-6 rounded-lg">
-              <div className=" flex flex-col justify-between h-full">
+              <div className=" flex flex-col justify-center h-[200px] lg:h-full ">
                 <div>
                   <h3 className="text-xl font-semibold text-accent mb-2">{title}</h3>
                   <p className="text-gray-300">{short}</p>
                 </div>
-                <div className="text-right ">
+                <div className="text-right mt-4">
                   <button
                     onClick={() => handleOpen(title, description, image)}
                     className="inline-flex items-center bg-accent text-primary px-2 py-1 rounded hover:bg-accent/90 transition-all duration-300 group text-sm font-semibold"
                   >
-                    Description
+                    Read More
                   </button>
                 </div>
               </div>
               </div>
-              <div className="basis-2/3">
+              <div className="basis-2/3 ">
                 <img
                   src={image}
                   alt={title}
