@@ -1,0 +1,93 @@
+[
+  {
+    "title": "AI Content Pipeline",
+    "short": "A workflow that triggers daily, generates blog content using AI models, publishes to WordPress and Twitter, and logs data to Google Sheets.",
+    "description": "The AI Content Pipeline is an automated system designed to streamline the process of content creation and distribution. It begins with a daily trigger that initiates the workflow, ensuring fresh content is generated and published at regular intervals. The first step involves an HTTP request to a Google service, likely fetching data or instructions from sources like Google Docs or Sheets. This data serves as the foundation for the next stage, where an AI model, possibly DeepSeek Chat or another large language model, processes the input to generate a blog post. The generated content is tailored to meet specific requirements, ensuring relevance and quality. \n\nOnce the blog post is ready, the system automatically publishes it to a WordPress site using a predefined template or formatting. This step eliminates the need for manual uploading, saving time and reducing errors. Simultaneously, the pipeline creates a tweet to promote the blog post on Twitter, helping to drive traffic and engagement. The tweet may include a summary, key points, or a direct link to the post, depending on the configured settings. \n\nTo maintain transparency and track performance, the pipeline logs all activities, such as publication status or engagement metrics, into a Google Sheet. This provides a centralized record for analysis and future optimizations. The use of DeepSeek Chat as the primary AI model highlights its role in generating coherent and contextually appropriate content. The entire workflow is designed to operate seamlessly, minimizing human intervention while maximizing efficiency. This makes it ideal for bloggers, marketers, or businesses looking to maintain a consistent online presence with minimal effort. The pipeline can be further customized to include additional platforms or features, such as SEO enhancements or multi-channel distribution, depending on specific needs.",
+    "image": "/workflows/AI Content Pipeline.png"
+  },
+  {
+    "title": "Summeries RSS Feed",
+    "short": "Automatically summarizes RSS feed content using AI and emails the digest to subscribers.",
+    "description": "The workflow begins when manually triggered (or potentially scheduled) to fetch the latest updates from a specified RSS feed. It sends the full text of each feed item to an AI summarization model (like OpenAI) which condenses the content while preserving key information. The generated summaries are then compiled into a digest format and distributed via email to subscribers. This provides recipients with concise, value-packed updates without overwhelming them with full articles. The solution is ideal for curating news digests, industry updates, or content roundups while saving hours of manual reading and summarization work. The automated process ensures timely delivery of summarized knowledge with minimal effort.",
+    "image": "/workflows/summeries rss feed.png"
+  },
+  {
+    "title": "Automated Customer Support Ticket Routing with Sentiment Analysis and Escalation",
+    "short": "Analyzes customer feedback, alerts managers for urgent issues, assigns available agents, and logs resolved tickets.",
+    "description": "This workflow automates the handling of incoming customer support tickets by integrating sentiment analysis, manager alerts, agent assignment, and logging. When a new ticket arrives via a webhook, the system first extracts the ticket details and performs sentiment analysis using an API. If the sentiment is negative, the workflow immediately notifies a manager via email and Slack to ensure prompt attention to critical issues. \n\nNext, the system checks agent availability to assign the ticket to the most suitable representative, optimizing response times. Once assigned, the ticket details are logged into Artable, a project management or ticketing tool, for tracking and resolution. This end-to-end automation improves efficiency, prioritizes high-priority complaints, and ensures accountability by documenting each step. The workflow is ideal for customer support teams aiming to enhance responsiveness and maintain organized records.",
+    "image": "/workflows/Automated Customer Support Ticket Routing with Sentiment Analysis and Escalation.png"
+  },
+  {
+    "title": "Daily Posting on LinkedIn",
+    "short": "Automates daily LinkedIn posts using AI-generated content, structured formatting, and scheduled publishing.",
+    "description": "The workflow begins with a scheduled trigger that activates the content generation process at a set time each day. An AI model, likely xAI Grok or a similar system, creates the post content, which is then refined and formatted for clarity and engagement. The system checks and adjusts the output to ensure it meets quality standards before proceeding. Finally, the formatted post is automatically published to LinkedIn, maintaining a consistent presence without manual intervention. This automation saves time while ensuring professional, regular updates on the platform.",
+    "image": "/workflows/Daily Posting on LinkedIn.png"
+  },
+  {
+    "title": "Ecommerce Order Processing with Fraud Check, Warehouse API, and Customer Notification",
+    "short": "Automates e-commerce order processing with fraud detection, warehouse coordination, and multi-channel customer notifications.",
+    "description": "The system begins when a new order is received via webhook, triggering an automated workflow. First, it extracts and validates the order details before passing them through a fraud detection API to assess risk. If fraud is suspected, the order is flagged for review; otherwise, it proceeds to fulfillment. The verified order is then sent to the warehouse management system via API to initiate packing and shipping, while simultaneously updating the order status in HubSpot for CRM tracking. \n\nTo keep customers informed, the system sends both email and SMS confirmations with order details and expected delivery timelines. This end-to-end automation reduces manual processing, minimizes fraud risks, accelerates fulfillment, and improves buyer communication—creating a seamless post-purchase experience while maintaining security and operational efficiency. The integration between payment processing, fraud screening, inventory systems and communication channels ensures accurate, timely order handling from checkout to delivery.",
+    "image": "/workflows/Ecommerce Order Processing with Fraud Check, Warehouse API, and Customer Notification.png"
+  },
+  {
+    "title": "WhatsApp Chatbot with GPT CRM Logging Overview",
+    "short": "Processes WhatsApp messages with AI-generated responses while automatically logging interactions in HubSpot CRM.",
+    "description": "When a message arrives via WhatsApp, the system instantly routes it to an AI model (like OpenAI) which analyzes the content and generates a context-aware reply. The response is formatted for clarity and sent back through WhatsApp, creating seamless conversational experiences. Simultaneously, the entire interaction—including both the customer's message and AI's response—gets automatically recorded as a contact activity in HubSpot. This maintains a complete CRM history while providing intelligent, instant replies. The solution combines AI-powered customer engagement with robust relationship tracking, ideal for sales, support, or lead nurturing scenarios where both responsiveness and record-keeping matter.",
+    "image": "/workflows/WhatsApp Chatbot with GPT CRM Logging Overview.png"
+  },
+  {
+    "title": "Facebook Messenger Product Recommender",
+    "short": "Uses AI to analyze incoming messages and instantly responds with personalized product recommendations via Facebook Messenger.",
+    "description": "When a customer sends a message through Facebook Messenger, the system immediately processes it using an AI model (likely OpenAI) to understand preferences and needs. The AI generates tailored product suggestions based on the conversation context. These recommendations are then formatted into a clear, engaging response and automatically sent back through Messenger. This creates a seamless, instant shopping assistant experience that helps customers discover relevant products while reducing manual support workload. The automation maintains natural conversations while driving sales through timely, personalized suggestions.",
+    "image": "/workflows/Facebook Messenger Product Recommender.png"
+  },
+  {
+      "title": "Find Unlimited Reddit Business Ideas",
+      "short": "Scans Reddit for trending discussions, identifies potential business opportunities, and analyzes them using AI to generate viable ideas.",
+      "description": "The system starts by automatically searching Reddit for popular threads and discussions based on predefined criteria. It then filters these posts to pinpoint recurring problems or needs that could represent business opportunities. Each identified issue undergoes analysis through an AI model, which examines the context and proposes potential solutions or business ideas. The refined concepts are logged in a database (like Airtable) for further evaluation. This AI-powered process continuously mines real-time community conversations to uncover untapped market gaps and innovative venture possibilities worth exploring.",
+      "image": "/workflows/Find Unlimited Reddit Business Ideas.png"
+  },
+  {
+      "title": "Learn Scratch Google Sheet Submission",
+      "short": "Automates email notifications when new Google Sheets rows are added, keeping team members instantly updated.",
+      "description": "The system monitors a Google Sheet for new row entries. Whenever data is added, it automatically triggers personalized email alerts to specified recipients (like Jahanzalb and Usama in this case). This ensures real-time awareness of spreadsheet updates without manual checking. The simple but effective workflow eliminates the need for constant sheet monitoring while maintaining seamless team communication around data changes. It's particularly useful for collaborative tracking, task assignments, or form submission follow-ups where timely notifications matter.",
+      "image": "/workflows/Learn Scratch Google Sheet Submission.png"
+  },
+  {
+      "title": "Multi-Channel Lead Enrichment & Routing Flow",
+      "short": "Automates lead enrichment from web forms, scores prospects by value, and routes high/low-priority leads to appropriate sales channels with tracking.",
+      "description": "The system starts when a new lead submits information through Typeform. It extracts the email address and enriches the profile using Clearbit's API to gather professional details like company role and social data. The enriched lead then goes through an automated scoring system that evaluates potential value based on predefined criteria. \n\nHigh-scoring leads trigger immediate email alerts to sales reps for prompt follow-up, while lower-priority prospects get added to a Slack channel for later nurturing. All lead interactions and routing decisions are automatically logged in a Google Sheet, creating a centralized audit trail. This ensures sales teams focus efforts on hot prospects while maintaining visibility into the full pipeline. The workflow eliminates manual data entry, speeds up response times to high-value leads, and maintains organized records for analytics and follow-up strategies.",
+      "image": "/workflows/Multi-Channel Lead Enrichment & Routing Flow.png"
+  },
+  {
+      "title": "Multi-Platform Social Media Auto Poster with Analytics",
+      "short": "Automatically shares content across Twitter, Facebook, and LinkedIn while tracking engagement metrics and alerting teams for low-performing posts.",
+      "description": "The system begins by extracting the latest post from an RSS feed or content database, then simultaneously publishes it across multiple social platforms (Twitter, Facebook, and LinkedIn). After posting, it captures the unique post IDs from each platform and waits 24 hours to collect performance data. The workflow then pulls detailed analytics from each platform, including Twitter and LinkedIn's native APIs, measuring metrics like impressions, clicks, and interactions. \n\nAll engagement data is compiled into a comprehensive report showing cross-platform performance, which gets automatically logged in Google Sheets for historical tracking and analysis. If any post receives below-average engagement, the system immediately notifies the sales or social media manager via their preferred communication channel (like Slack or email). This real-time performance monitoring helps teams quickly identify and respond to underperforming content while maintaining a consistent multi-platform presence. The automation saves hours of manual posting and reporting work while providing actionable insights to optimize future social media strategies.",
+      "image": "/workflows/Multi-Platform Social Media Auto Poster with Analytics.png"
+  },
+  {
+      "title": "Newsletter for personal branding website to sendgrid",
+      "short": "Automates newsletter distribution from a personal branding website to subscribers via SendGrid.",
+      "description": "The system is triggered by a webhook when new content is published on a personal branding website. It automatically formats the content into a newsletter template and delivers it to the subscriber list through SendGrid's email API. This ensures timely, consistent communication with the audience without manual intervention. The process maintains branding consistency while handling all technical aspects of email delivery, including batching, scheduling, and tracking open rates. By automating newsletter distribution, it saves significant time while keeping subscribers engaged with regular updates about new content or offerings.",
+      "image": "/workflows/Newsletter for personal branding website to sendgrid.png"
+  },
+  {
+      "title": "Shopify Order + Shippo Fulfillment + Notifications",
+      "short": "Automates order fulfillment by generating shipping labels, notifying customers, and updating teams—all while tracking everything in a spreadsheet.",
+      "description": "When a new Shopify order comes in, the system instantly pulls key details like the customer’s address and items purchased. It then connects with Shippo’s API to create and retrieve a shipping label, streamlining the fulfillment process. Simultaneously, the customer receives an email confirmation with order and shipping details, while the warehouse or operations team gets a Slack notification to prepare the package. Every step—from order receipt to label generation and notifications—is automatically logged in a Google Sheet for record-keeping and analytics. This end-to-end automation reduces manual tasks, minimizes errors, and keeps everyone informed in real time.",
+      "image": "/workflows/Shopify Order + Shippo Fulfillment + Notifications.png"
+  },
+  {
+      "title": "Stripe Success Charge > Email (ReachOwl)",
+      "short": "Triggers personalized confirmation emails automatically after successful Stripe payments to improve customer communication.",
+      "description": "This workflow activates whenever a payment is successfully processed through Stripe. It instantly sends a customized confirmation email to the customer via ReachOwl (or another email service), ensuring prompt receipt visibility and reinforcing trust. The automated message can include order details, delivery timelines, or next steps—eliminating manual follow-ups while maintaining professional, timely communication. This seamless integration between payment processing and email systems enhances the post-purchase experience with zero administrative overhead.",
+      "image": "/workflows/Stripe Success Charge > Email (ReachOwl).png"
+  },
+  {
+      "title": "Stripe Success Charge > Email (Vocallify)",
+      "short": "Automatically sends email confirmations to customers after successful Stripe payments using Vocallify",
+      "description": "This workflow activates whenever a payment is successfully processed through Stripe. It instantly triggers a personalized email confirmation to the customer via Vocallify, ensuring they receive immediate proof of payment and transaction details. The automated system eliminates manual follow-ups, reduces administrative tasks, and enhances customer trust by providing timely, professional communication. Ideal for subscriptions, digital products, or service bookings, this seamless integration ensures no customer is left without a receipt while maintaining brand consistency.",
+      "image": "/workflows/Stripe Success Charge > Email (Vocallify).png"
+  }
+
+]
